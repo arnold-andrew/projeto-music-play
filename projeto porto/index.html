@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musica Play</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card-player">
+      <div class="conteudo-musica">
+        <img src="imagens/Benson-Boone.webp" alt="" id="capaMusica" class="capa-musica">
+        <div class="desc-musica">
+          <p id="tituloMusica">Beautiful Things</p>
+          <span id="artistaMusica">Benson Boone</span>
+        </div>
+      </div>
+      <div class="controles">
+        <button id="voltar"><img src="assets/voltar.png" alt="voltar"></button>
+        <button id="play"><img src="assets/botao-play.png" alt="play"></button>
+        <button id="pause" class="hide"><img src="assets/pausa.png" alt="pause"></button>
+        <button id="avancar"><img src="assets/avancar.png" alt="avancar"></button>
+      </div>
+      <div class="container-progresso">
+        <input id="progressBar" type="range" value="0" min="0" max="100" step="1">
+      </div>
+      <div class="tempo-musica">
+        <span id="tempoAtual">00:00</span>
+        <span id="tempoTotal">01:01</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
